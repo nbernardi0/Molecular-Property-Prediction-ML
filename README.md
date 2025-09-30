@@ -22,7 +22,7 @@ The data pre-processing and the initial setup of the Neural Network architecture
 
 | Result | Achievement |
 | :--- | :--- |
-| **Model Performance** | Achieved a **[Specific R-squared value, e.g., 0.94 R-squared]** on the holdout test set, significantly outperforming initial linear regression benchmarks. |
+| **Model Performance** | Achieved a **[R-squared values in the range of 0.79-0.99]** on the holdout test set, significantly outperforming initial linear regression benchmarks. |
 | **Analytical Insight** | Provided detailed **comparative insights** on the bias-variance trade-off between the ensemble (Random Forest) and deep learning (NN) methods, guiding the final model selection. |
 
 **Technologies Used:**
