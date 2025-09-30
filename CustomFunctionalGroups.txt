@@ -1,0 +1,56 @@
+// Copyright (C) 2003 Rational Discovery LLC
+//  This file is part of the RDKit.
+//  The contents are covered by the terms of the BSD license
+//  which is included in the file license.txt, found at the root
+//  of the RDKit source tree.
+// NOTES:
+//  - larger functional groups should come before smaller ones involving
+//    the same core atom
+//  - the first atom in the SMARTS query is not part of the group itself
+//  - it is essential that the fields in this file be separated by tabs
+//    (not spaces).
+//
+//   Label	SMARTS	Notes
+//--------------------------------------------------
+
+-NC(=O)CH3	*-[N;D2]-[C;D3](=O)-[C;D1;H3]	methyl amide 1
+-C(=O)O	*-C(=O)[O;D1]	carboxylic acids 2
+-C(=O)OMe	*-C(=O)[O;D2]-[C;D1;H3]	carbonyl methyl ester 3
+-C(=O)H	*-C(=O)-[C;D1]	terminal aldehyde 4
+-C(=O)N	   *-C(=O)-[N;D1]		amide 5
+-C(=O)CH3	*-C(=O)-[C;D1;H3]	carbonyl methyl 6
+-N=C=O	   *-[N;D2]=[C;D2]=[O;D1]	isocyanate 7
+
+//--------------------------------------------------
+// Nitrogen containing
+-NO2	   *-[N;D3](=[O;D1])[O;D1]	nitro 8
+-N=O	   *-[N;R0]=[O;D1]	nitroso 9
+=N-O	   *=[N;R0]-[O;D1]	oximes 10
+=NCH3	   *=[N;R0]-[C;D1;H3]	Imines 11
+-N=CH2	   *-[N;R0]=[C;D1;H2]	Imines 12
+-N=NCH3	   *-[N;D2]=[N;D2]-[C;D1;H3]	terminal azo 13
+-N=N	   *-[N;D2]=[N;D1]	hydrazines 14
+-N#N	   *-[N;D2]#[N;D1]		diazo 15
+-C#N	   *-[C;D2]#[N;D1]		cyano 16
+
+//--------------------------------------------------
+// S containing
+
+
+//--------------------------------------------------
+//Miscellaneous fragments:
+-X		*-[#9,#17,#35,#53]	   halogens 17
+-tBu	*-[C;D4]([C;D1])([C;D1])-[C;D1]	t-butyl 18
+-CF3		*-[C;D4](F)(F)F		trifluoromethyl 19
+-C#CH	*-[C;D2]#[C;D1;H]	acetylenes 20
+-cPropyl	*-[C;D3]1-[C;D2]-[C;D2]1	cyclopropyl 21	
+
+//--------------------------------------------------
+//Really teeny stuff:
+-OEt	*-[O;D2]-[C;D2]-[C;D1;H3]	ethoxy 22
+-OMe	*-[O;D2]-[C;D1;H3]	methoxy 23
+-O	*-[O;D1]	side-chain hydroxyls 24
+=O	*=[O;D1]	side-chain aldehydes or ketones 25
+-N	   *-[N;D1]			primary amines 26
+=N	   *=[N;D1]			??? 27
+#N	   *#[N;D1]			nitriles 28
