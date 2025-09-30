@@ -1,5 +1,39 @@
 # DSCE_Bernardi_Liberatore
 
+## Descritpion
+Molecular Properties Prediction - Comparative ML Modeling
+
+Project Goal: To establish high-accuracy predictive models for molecular properties by applying and comparing various supervised Machine Learning algorithms and Neural Networks, thereby accelerating the simulation and analysis process in chemical engineering.
+
+### Contribution and Collaboration Statement
+This project was developed as part of a Master’s level coursework (Data Science in Chemical Engineering) in collaboration with a colleague. This repository is maintained by Nicola Bernardi and serves as a portfolio to specifically showcase my **Machine Learning evaluation and analytical expertise**.
+
+The data pre-processing and the initial setup of the Neural Network architecture were handled by my collaborator.
+
+**My explicit technical contributions were focused on:**
+
+1.  **Random Forest Modeling:** Full implementation, training, and optimization of the **Random Forest** model using **scikit-learn**.
+2.  **In-Depth Comparative Analysis:** Execution of an **extensive performance evaluation** across all models, including the Random Forest and the collaborative Neural Network. My work focused on **statistical analysis, rigorous cross-validation**, and **interpretation of results** to determine the optimal model for error minimization.
+3.  **Core Modeling & Evaluation Files:** This repository contains the code defining the Random Forest architecture and all the scripts used for the comprehensive evaluation methodology.
+
+---
+
+### Key Results & Technologies
+
+| Result | Achievement |
+| :--- | :--- |
+| **Model Performance** | Achieved a **[Specific R-squared value, e.g., 0.94 R-squared]** on the holdout test set, significantly outperforming initial linear regression benchmarks. |
+| **Analytical Insight** | Provided detailed **comparative insights** on the bias-variance trade-off between the ensemble (Random Forest) and deep learning (NN) methods, guiding the final model selection. |
+
+**Technologies Used:**
+
+* **Python (Core):** `scikit-learn`, `NumPy`, `Pandas`, `Matplotlib`
+* **Evaluation Context:** `TensorFlow`, `Keras` (as models analyzed)
+
+---
+
+
+
 ## Code Files
 
 - **ms_catalog.py**  
